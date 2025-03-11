@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #000000;
+}
 @font-face {
     font-family: 'first';
     src: url(https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2);
@@ -24,36 +26,31 @@
     flex-direction: column;
     min-height:55px;
     background-color: #000000;
-}
+    position:fixed;
+    width:100%;
+    z-index:100;
 
-.head {
-    background-color: #000000;
-    
-    gap:16px;
-    z-index:2;
 }
 .heading{
-    position:fixed;
     padding:20px;
-    background-color: #000000;
 }
 .heading-1{
     display:flex;
     align-items: center;
     -webkit-box-align: center;
-    gap:16px;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content:space-between;
     align-items: center;
     margin-top:-7px;
 }
 .heading-2{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    z-index:99;
 }
 .icons{
-    height:16px;
+    height:22px;
     padding-left:16px;
     padding-right:16px;
     color:#fff;
@@ -63,14 +60,12 @@
     color:#000000;
     font-size:13px;
     font-family:'third';
-
 }
 .open-app{
     border:none;
-    padding:0px;
+    padding:4px 16px;
     background-color:#fff;
     border-radius:20px;
-    width:35%;
 }
 .lines{
     display:flex;
@@ -85,9 +80,11 @@
     height:24px;
 }
 .popular{
-    margin-bottom:12px;
+    margin-top:54px;
     overflow: hidden;
-
+}
+.populars{
+    margin-top:-26px;
 }
 .section-2{
     padding:0 16px;
@@ -113,6 +110,7 @@
     align-items: stretch;
     background-color: #000000;
     scrollbar-width:none;
+    margin-top:15px;
 
 }
 .cont{
@@ -264,40 +262,13 @@
 .section-10{
    padding:8px 16px 25px;
 }
-@media screen and (min-width:375px){   
+ @media screen and (min-width:375px){   
     .picture{
         display:none;
     }
     .heading1{
         display:inline;
-
-    }
-    .icons{
-        height:33px;
-    }
-    .open-app{
-        padding:5px;
-        width:100%;
-    }
-    .heading-2{
-        position:fixed;
-        right:17px;
-        background-color: #000000;
-
-    }
-    .open-app{
-        width:100%;
-        gap:0px;
-        white-space:nowrap;
-    }
-    .section-1{
-        background-color: #000000;
-    }
-    .heading{
-        position:fixed;
-        padding:20px;
-    }
-
+    } 
 }
 @media screen and (min-width:768px) {
     .page-end{
@@ -305,7 +276,6 @@
         flex-wrap: wrap;
         flex-direction:row;
     }
-
     .section-10{
         width:50%;
         display:flex;
@@ -342,3 +312,9 @@
         padding-bottom:40px;
     }
 }
+
+
+
+
+
+
